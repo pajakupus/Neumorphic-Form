@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --success-color: #46b154;
+    --error-color: #a71717;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /*  */
+    font-family: 'Montserrat', sans-serif;
+    color: #555555;
+    background: #ecf0f3;
+}
+
+
+.container {
+    
+    padding: 35px 35px 35px 35px;
+    text-align: center;
+    min-width: 400px;
+    
+    border-radius: 40px;
+    background: #ecf0f3;
+ 
+
+    box-shadow: 13px 13px 28px #cbd1f5,
+                -13px -13px 28px #ffffff;
+     
+
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0 40px;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin: 15px 25px 15px 25px;
+    padding-bottom: 20px;
+    position: relative;
+
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+
+.form-control input {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 20px;
+    display:inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background: #ecf0f3;
+    box-shadow: 13px 13px 28px #cbd1f5,
+                -13px -13px 28px #ffffff;
+
+}
+
+.form-control input:focus {
+    outline:0;
+    border-color: #ecf0f3;
+
+}
+
+.form-control.success input {
+    color: var(--success-color);
+}
+
+button.submit {
+    cursor: pointer;
+    height: 80px;
+    width: 160px;
+    border:none;
+    display: block;
+    border-radius: 40px;
+    box-shadow: 13px 13px 20px #cbd1f5,
+                -13px -13px 20px #ffffff;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: large;
+    color: #555555;
+    
+}
+
+.form-control small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left:0;
+    visibility: hidden;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.form-control.form-control.error small {
+    visibility: visible;
+}
+
+button.submit:focus {
+    outline:none;
+}
+
+button.submit:active {
+    outline: none;
+    box-shadow: none;
+    
+}
+.button.submit:focus::after {
+    box-shadow: 13px 13px 20px #cbd1f5,
+                -13px -13px 20px #ffffff;
+  }
+
+.logo {
+    width: 260px;
+    height: 220px;
+    margin: 15px 25px 15px 25px;
+    position: relative;
+   
+}
+
+img {
+    margin-left: 10px;
+    width: 80%;
+    height: auto;
+    opacity: 0.7;
+    border: none;
+    border-radius: 500px;
+    box-shadow: 13px 13px 20px #cbd1f5,
+                -13px -13px 20px #ffffff;
+    
+
+}
